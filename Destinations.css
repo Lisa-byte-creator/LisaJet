@@ -1,0 +1,223 @@
+/* Targeting the entire page */
+body {
+    margin: 0;
+    padding: 60px 0 0 0; /* Adjust the top padding as needed */
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+
+/* Targeting the section with destinations */
+.card-container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 60px; /* Adjust the margin top as needed */
+}
+
+/* Targeting the paragraphs */
+.card-container p {
+    text-align: justify;
+}
+
+.columns {
+    overflow: hidden;
+    width: 300px;
+}
+
+/* Adding a hover effect to the columns */
+.columns:hover {
+    transform: translateY(-20px);
+}
+
+/* Targeting the images */
+img {
+    width: 300px;
+    height: 320px;
+    display: flex;
+    object-fit: cover;
+}
+
+/* Targeting the country names */
+h2 {
+    text-align: center;
+}
+
+/* Targeting the 'learn more' buttons */
+.card-button {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    border-radius: 1px;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.card-button:hover {
+    color: black;
+}
+
+/* Targeting the logo */
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #8B0000;
+    gap: 5px; /* Applying the gap */
+    font-size: 24px; /* Font size */
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Font style */
+}
+
+/* Targeting the logo image */
+.logo img {
+    padding: 0;
+}
+
+/* Targeting the logo */
+div a img {
+    margin-right: 10px;
+}
+
+/* Targeting items in h1 */
+header {
+    padding: 12px 0; /* Applying padding */
+    display: flex; /* Display style */
+    align-items: center;
+    justify-content: center; /* Centering the content */
+    margin-bottom: 0px;
+    background: white; /* Setting the background color */
+}
+
+/* Targeting the navbar */
+nav {
+    width: 100vw; /* Full viewport width */
+    overflow: auto;
+    background-color: white; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures the navbar stays above other content */
+    display: flex; /* Using flex to align items */
+    justify-content: space-between; /* Spacing items */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Font style */
+    font-weight: bold;
+}
+
+/* Setting the nav bar for responsiveness */
+@media screen and (max-width: 767px) {
+    nav {
+        flex-direction: column; 
+        align-items: stretch; /* Ensure items take full width */
+    }
+    .logo, .Search, ul {
+        width: 100%; /* Make these elements take the full width */
+    }
+}
+
+/* Targeting the search bar */
+.Search {
+    margin-right: 10px; /* Space from right margin */
+    border-radius: 30px; /* Adding rounded corners */
+    background-color: white;
+    display: inline-block; /* Container wraps around the contents */
+
+    /* Screen responsiveness on the search bar */
+    @media screen and (max-width: 767px) {
+        display: none; 
+    }
+}
+
+/* Targeting the search input */
+.Search input[type="text"] {
+    border: none;
+    height: 20px;
+    padding: 5px; /* Space between input text and border */
+    border-radius: 30px; /* Apply rounded corners to the input */
+}
+
+/* Targeting the search button */
+.Search button[type="submit"] {
+    background-color: navy;
+    font-family: Arial, Helvetica, sans-serif; /* Font style */
+    border: none; /* Removing the border around the search button */
+    height: 30px; /* Setting the height of the search bar */
+    border-radius: 30px; /* Rounded corners to the button */
+    color: beige; /* Text color */
+    transition: background-color 1s, color 1s;
+}
+
+.Search button:active {
+    opacity: 0.4;
+}
+
+/* Adding the hover effect with white background color */
+li:hover {
+    color: red;
+}
+
+/* Targeting the items in the nav list */
+nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-direction: row;
+
+    /* Applying the responsiveness of items within the nav bar on small screen */
+    @media screen and (max-width: 640px) {
+        flex-direction: column;
+    }
+}
+
+/* Targeting the search input bar */
+nav form {
+    background: #d9d8fc;
+    border-radius: 20px;
+    padding: 4px;
+}
+
+nav form input {
+    background: none;
+    cursor: pointer; /* Applying cursor style */
+}
+
+li {
+    display: inline-block; /* Items displayed */
+    margin-left: 45px; /* Adding some space between list items */
+
+    @media screen and (max-width: 640px) {
+        margin: 0;
+    }
+}
+
+/* Targeting the listed items within the header */
+li a {
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    color: navy;
+    text-align: center;
+
+    /* Applying responsiveness to items within the header */
+    @media screen and (max-width: 640px) {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+h1 {
+    margin-right: 5px;
+}
+
+/* Style for the logo */
+header img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+    padding-top: 10px;
+}

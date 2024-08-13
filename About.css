@@ -1,0 +1,304 @@
+/*targetting the entire web page*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif ;
+    box-sizing: border-box;
+    background-color: snow;
+}
+
+.section{
+    width: 100%;
+    min-height: 100vh;
+    
+}
+
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.content-section{
+
+    float: left;
+    width: 55%;  
+
+}
+/*targetting the image*/
+.image-section{
+    float: right;
+    width: 40%;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  /*targetting the title*/
+  .content-section .title{
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+
+  /*targetting the header 3*/
+  .content-section .content h3{
+    margin-top: 20px;
+    color:black;
+    font-size: 20px;
+  }
+
+  /*targetting the paragraph*/
+  .content-section .content p{
+    text-align: justify;
+    margin-top: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: gray;
+    font-size: 18px;
+    line-height: 1,6;
+  }
+
+  /*targetting the button*/
+  .content-section .content .button{
+    margin-top: 30px;
+  }
+  .content-section .content .button a{
+    background-color: navy;
+    color: white;
+    border-radius: 1px;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 27px;
+
+  }
+/*targetting the cocial icon section*/
+  .content-section .social{
+    margin-top: 40px ;
+
+  }
+
+  .content-section .social i{
+    color: darkred;
+    font-size: 22px;
+    padding: 0 10px;
+  }
+/*adding hover effect on the social icons*/
+  .content-section .social i:hover{
+   color: black;
+  }
+
+  /*adding the responsiveness effect*/
+  @media screen and (max-width: 640px){
+    .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    .content-section{
+
+        float: none;
+        width: 100%;  
+        display: block;
+        margin: auto;
+    }
+
+    .image-section{
+        
+        float: none;
+        width: 100%;  
+       
+    }
+
+    .image-section img{
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .content-section .title{
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .content-section .content .button{
+        text-align: center;
+      }
+    
+      .content-section .content .button a{
+        padding: 9px 30px;
+      }
+
+      .content-section .social{
+        text-align: center;
+      }
+  }
+
+
+/* Targeting the logo */
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #8B0000;
+  gap: 5px; /* Applying the gap */
+  font-size: 24px; /* Font size */
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Font style */
+}
+
+/* Targeting the logo image */
+.logo img {
+  padding: 0;
+}
+
+/* Targeting the logo */
+div a img {
+  margin-right: 10px;
+}
+
+/* Targeting items in h1 */
+header {
+  padding: 12px 0; /* Applying padding */
+  display: flex; /* Display style */
+  align-items: center;
+  justify-content: center; /* Centering the content */
+  margin-bottom: 0px;
+  background: white; /* Setting the background color */
+}
+
+/* Targeting the navbar */
+nav {
+  width: 100vw; /* Full viewport width */
+  overflow: auto;
+  background-color: white; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensures the navbar stays above other content */
+  display: flex; /* Using flex to align items */
+  justify-content: space-between; /* Spacing items */
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Font style */
+  font-weight: bold;
+}
+
+/* Setting the nav bar for responsiveness */
+@media screen and (max-width: 767px) {
+  nav {
+      flex-direction: column; 
+      align-items: stretch; /* Ensure items take full width */
+  }
+  .logo, .Search, ul {
+      width: 100%; /* Make these elements take the full width */
+  }
+}
+
+/* Targeting the search bar */
+.Search {
+  margin-right: 10px; /* Space from right margin */
+  border-radius: 30px; /* Adding rounded corners */
+  background-color: white;
+  display: inline-block; /* Container wraps around the contents */
+
+  /* Screen responsiveness on the search bar */
+  @media screen and (max-width: 767px) {
+      display: none; 
+  }
+}
+
+/* Targeting the search input */
+.Search input[type="text"] {
+  border: none;
+  height: 20px;
+  padding: 5px; /* Space between input text and border */
+  border-radius: 30px; /* Apply rounded corners to the input */
+}
+
+/* Targeting the search button */
+.Search button[type="submit"] {
+  background-color: navy;
+  font-family: Arial, Helvetica, sans-serif; /* Font style */
+  border: none; /* Removing the border around the search button */
+  height: 30px; /* Setting the height of the search bar */
+  border-radius: 30px; /* Rounded corners to the button */
+  color: beige; /* Text color */
+  transition: background-color 1s, color 1s;
+}
+
+.Search button:active {
+  opacity: 0.4;
+}
+
+/* Adding the hover effect with white background color */
+li:hover {
+  color: red;
+}
+
+/* Targeting the items in the nav list */
+nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-direction: row;
+
+  /* Applying the responsiveness of items within the nav bar on small screen */
+  @media screen and (max-width: 640px) {
+      flex-direction: column;
+  }
+}
+
+/* Targeting the search input bar */
+nav form {
+  background: #d9d8fc;
+  border-radius: 20px;
+  padding: 4px;
+}
+
+nav form input {
+  background: none;
+  cursor: pointer; /* Applying cursor style */
+}
+
+li {
+  display: inline-block; /* Items displayed */
+  margin-left: 45px; /* Adding some space between list items */
+
+  @media screen and (max-width: 640px) {
+      margin: 0;
+  }
+}
+
+/* Targeting the listed items within the header */
+li a {
+  display: block;
+  padding: 20px 15px;
+  text-decoration: none;
+  color: navy;
+  text-align: center;
+
+  /* Applying responsiveness to items within the header */
+  @media screen and (max-width: 640px) {
+      padding-top: 8px;
+      padding-bottom: 8px;
+  }
+}
+
+h1 {
+  margin-right: 5px;
+}
+
+/* Style for the logo */
+header img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+  padding-top: 10px;
+}

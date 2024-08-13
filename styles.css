@@ -1,0 +1,350 @@
+/*targeting the entire web page*/
+body {
+    margin: 0; /* Resetting default margin and margin */
+    padding: 0; /* Resetting default margin and padding */
+    height: 100vh;   /* Setting the height of the body to cover the viewport height */
+    display: block;  /* Making sure body is displayed as a block element */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(image2.JPG) no-repeat;
+    background-attachment: fixed; /* Ensuring the background image is fixed */
+    background-size: cover;
+    background-position: center;  /* Positioning the background image at the center */
+    height: 100vh;
+    position: relative;  /* Making the body a flex container with column layout */
+    display: flex;  /* Making the body a flex container with column layout */
+    flex-direction: column;  /* Making the body a flex container with column layout */
+  }
+  
+  
+  /*targetting the logo*/
+  .logo a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #8B0000;
+      gap: 5px; /*applying the gap*/
+      font-size: 24px; /*font size*/
+      font-weight: bold;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*font style*/
+     
+  }
+  
+  /*targetting the logo image*/
+  .logo img {
+      padding: 0;
+  }
+  
+  /* targeting the logo */
+  div a img {
+    margin-right: 10px;
+  }
+  
+  /* targetting items in h1 */
+  header {
+      padding: 12px 0; /*applying padding*/
+    display: flex; /*display style*/
+    align-items: center;
+    justify-content: center; /*centering the content*/
+    margin-bottom: 0px;
+    background: white; /*setting the background color*/
+  
+  }
+  
+  /*targetting the navbar*/
+  nav {
+    width: 100%;
+    max-width: 1200px;
+    overflow: auto;
+   
+    position: relative;
+    display: flex; /*using flex to align items*/
+    justify-content: space-between; /*spacing items*/
+    align-items: center;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*font style*/
+    font-weight: bold;
+  
+   
+  
+    /*setting the nav bar for responsiveness*/
+    @media screen and (max-width: 767px)
+    {
+        flex-direction: column;    
+    }
+  }
+  
+  /* Targeting the search bar */
+  .Search {
+    margin-right: 10px; /*space from right margin*/
+    border-radius: 30px; /*adding rounded corners*/
+    background-color: white;
+    display: inline-block; /*container wraps around the contents */
+  
+    /*screen responsiveness on the search bar*/
+    @media screen and (max-width: 767px){
+      display: none; 
+    }
+  }
+  
+  /* Targeting the search input */
+  .Search input[type="text"] {
+    border: none;
+    height: 20px;
+    padding: 5px; /* space between input text and border */
+    border-radius: 30px; /* Apply rounded corners to the input */
+   
+  }
+  
+  /* Targeting the search button */
+  .Search button[type="submit"] {
+    background-color: navy;
+    font-family: Arial, Helvetica, sans-serif; /*font style*/
+    border: none; /*remobing the border around the search button*/
+    height: 30px; /*setting the height of the search bar*/
+    border-radius: 30px; /*  rounded corners to the button */
+    color: beige; /*text color*/
+    transition:  background-color 1s, color 1s;
+  }
+  
+  .Search button:active{
+    opacity: 0.4;
+    }
+  
+  
+  /*adding the hover effect with white background color*/
+  li :hover {
+    color: red;
+  }
+  /*targetting the items in the nav list*/
+  nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    flex-direction: row;
+  
+    /*applying the responsiveness of items within the nav bar on small screen*/
+    @media screen and (max-width: 640px){
+      flex-direction: column;    
+    }
+  }
+  
+  /*targeting the search input bar*/
+  nav form {
+      background: #d9d8fc;
+      border-radius: 20px;
+      padding: 4px;
+  }
+  
+  nav form input {
+      background: none;
+      cursor: pointer; /*applying cursor style*/
+  }
+  
+  
+  li {
+    display: inline-block; /*items displayed */
+    margin-left: 45px; /*adding some space between list items*/
+  
+    @media screen and (max-width: 640px){
+      margin: 0;  
+    }
+  }
+  
+  /*targetting the listed items within the header*/
+  li a {
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    color: navy;
+    text-align: center;
+  
+    /*applying responsiveness to items within the header*/
+    @media screen and (max-width: 640px){
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+  
+  }
+  
+  /*targetting the button for find flights*/
+  
+  .button {
+    height: 40px;
+    border-radius: 10px; /*adding rounded corners*/
+    padding:10px;
+    font-size: 16px;
+    color: white; /*text color*/
+    border: none;
+    min-width: 150px;
+    transition:  background-color 1s, color 1s;
+  }
+  
+  .button:active{
+    opacity: 0.4;
+    }
+  
+  
+  /*targetting the text, above the form*/
+  .hero-text {
+    color: white;
+    margin: 90px auto 0;
+    font-size: 20px; /*font size*/ 
+    line-height: 30px; /*space between lines*/
+    bottom: 0px;
+    max-width: 800px;
+    text-align: center;  /*centering the text*/
+    text-shadow: 2px 4px 6px rgb(0, 0, 0, 0.4); /*adding text shadow, for better readability*/
+    
+  }
+  
+  .hero-text h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*text font*/
+    font-size: 42px;
+    margin-bottom: 12px;
+    line-height: 50px;
+  }
+  
+  /*targeting the paragragh under the header*/
+  .hero-text p {
+    font-size: 16px;
+    font-family: Roboto, sans-serif; /*text style*/
+    text-transform: uppercase;
+    letter-spacing: 2px; /*adding spacing between letters*/
+    word-spacing: 3px;  /*adding spacing between words*/
+  }
+  
+  /* Targeting the footer */
+  .footer-nav a {
+    text-decoration: none;
+    padding: 0;
+    color: darkred; /* Text color */
+    font-family: Arial, Helvetica, sans-serif; /* Text style */
+    font-weight: bold; /* Making text bold */
+  }
+  
+  /* Adding the hover effect */
+  .footer-nav a:hover {
+    background: none;
+    text-decoration: none; 
+  }
+  
+  /* Targeting the items within the footer */
+  .footer-nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centering the list items horizontally */
+  }
+  
+  .footer-nav ul li {
+    padding: 0px 20px;
+  }
+  
+  /* Styling for footer-div */
+  #footer-div {
+    width: 100%;
+    background-color: silver; /* Background color */
+    margin-top: auto;
+    display: flex;
+    justify-content: center; /* Centering the content horizontally */
+    align-items: center; /* Centering the content vertically */
+    flex-direction: column; /* Ensuring the items are stacked vertically */
+    padding: 15px 0;
+  }
+  
+  /* Adding the hover effect to the footer list */
+  #footer-div a:hover {
+    background-color: white;
+  }
+  
+  
+  /* Style for the logo */
+  header img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+  
+  /*targetting the entire form*/
+  .booking-form {
+    font-family: Roboto, Helvetica, sans-serif; /*font style*/
+    background-color: transparent;
+    padding: 40px;
+    border-radius: 20px; /*adding rounded corners*/
+    max-width: 1000px;
+    margin: 60px auto 0 ;
+  
+    /*responsivenss on the form for small screens*/
+    @media screen and (max-width: 640px){
+      margin: 100px 40px;
+    }
+  }
+  
+  .booking-form form {
+    display: flex;
+    gap: 16px; /*adding some space*/
+    align-items: flex-end;
+  
+    @media screen and (max-width: 640px){
+      flex-direction: column;    
+    }
+  }
+  
+  /*targetting the header within the form*/
+  .booking-form h2 {
+    color: darkred; /*text coolor*/
+    font-family: Roboto, sans-serif;
+    margin-top: 0;
+  }
+  
+  /*targetting the groups within the form*/
+  .booking-form .form-group {
+      margin-right: 16px;
+      flex: 1;
+  
+      /*screen responsivenss on small screens*/
+      @media screen and (max-width: 640px){
+        width: 100%;
+      }
+    }
+  
+      /*targeting the form label*/
+    .booking-form  label {
+      font-family: Roboto, Helvetica, sans-serif;  /* Setting font family for labels */
+      font-size: 14px;   /* Setting font size for labels */
+      font-weight: 500; /*font thickness*/
+      display: block; /*display style*/
+      margin-bottom: 6px;
+      color: whitesmoke;
+    }
+    
+  
+    /* Targeting the input fields and select elements */
+    .booking-form  input,
+    select {
+      display: flex;  /* Making inputs and selects flexible */
+      width: 100%;  /* Setting width to fill the parent container */
+      padding: 10px;
+      border: 1px solid #ccc;  /* Adding border around inputs and selects */
+      border-radius: 4px;  /*  rounded corners */
+    }
+  
+    /*targetting the find flights button*/
+    .booking-form  button {
+      background-color: darkred; /* Setting background color for button */
+      color:white; /*text color*/
+      border: none;   /* Removing button border */
+      border-radius: 4px;
+      cursor: pointer;   /* Changing cursor to pointer on hover */
+      font-family: Arial, Helvetica, sans-serif;
+      
+    }
+    
+  
+
+/////// Destination Page /////// 
+
+

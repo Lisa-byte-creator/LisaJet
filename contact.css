@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+  }
+ 
+  header {
+    background-color:white;
+    padding: 10px 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+   
+  }
+  
+  /*targetting the logo section*/
+  .logo img {
+    width: 70px;
+    height: auto;
+    gap: 5px; /*applying the gap*/
+ 
+  }
+  
+  .logo p {
+    display: inline-block;
+    margin-left: 10px;
+    color: darkred;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*font style*/
+    align-items: center;
+    text-decoration: none;
+    gap: 5px; /*applying the gap*/
+    font-size: 24px; /*font size*/
+    font-weight: bold;
+  }
+  
+  .menu-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+   
+  }
+  
+  .menu-bar li {
+    margin: 0 10px;
+ 
+  }
+  
+  .menu-bar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    color: navy;
+    font-weight: bold;
+    margin-left: 45px;
+    display: inline-block; /*items displayed */
+    margin-left: 45px; /*adding some space between list items*/
+  }
+  
+  .menu-bar .active a {
+    border-bottom: 2px solid #fff;
+  }
+  
+  /* Targeting the search bar */
+.Search {
+    margin-right: 10px; /*space from right margin*/
+    border-radius: 30px; /*adding rounded corners*/
+    background-color: white;
+    display: inline-block; /*container wraps around the contents */
+  
+    /*screen responsiveness on the search bar*/
+    @media screen and (max-width: 767px){
+      display: none; 
+    }
+  }
+  
+  /* Targeting the search input */
+  .Search input[type="text"] {
+    border: none;
+    height: 20px;
+    padding: 5px; /* space between input text and border */
+    border-radius: 30px; /* Apply rounded corners to the input */
+  }
+  
+  /* Targeting the search button */
+  .Search button[type="submit"] {
+    background-color: navy;
+    font-family: Arial, Helvetica, sans-serif; /*font style*/
+    border: none; /*remobing the border around the search button*/
+    height: 34px; /*setting the height of the search bar*/
+    border-radius: 30px; /*  rounded corners to the button */
+    color: beige; /*text color*/
+    transition:  background-color 1s, color 1s;
+  }
+  
+  .Search button:active{
+    opacity: 0.4;
+    }
+  
+  /* Contact Section */
+  .Contact {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact_form {
+    background-color: aliceblue;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+ padding-left: 5px;
+ color:darkred;
+ text-align: center;
+  }
+  
+  .Contact_Info h3 {
+    margin-top: 0;
+  }
+  
+  .contacts p {
+    margin: 10px 0;
+  }
+  
+  .contacts i {
+    margin-right: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  
+  /*targetting the textarea*/
+  .form-group textarea {
+    resize: vertical;
+    height: 70px;
+  }
+  
+  /*styling the send button*/
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: darkred;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  /*hover effects on the send button*/
+  button[type="submit"]:hover {
+    background-color: #555;
+    color: darkred;
+    color: white;
+  }
+  

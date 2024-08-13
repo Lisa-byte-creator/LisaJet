@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="LisaJet_Elite">
+  <!--making web page respond respectively on different devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LisaJet Elite</title>
+  <!--Linking the external css file-->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--setting the background image-->
+  <div class="image"></div>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="logo1.jpg" alt="LisaJet Elite Logo">LisaJet Elite</a>
+      </div>
+
+      <div class="menu-bar">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="Destinations.html">Destinations</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="Search">
+        <form>
+          <input type="text" placeholder="Search...">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+    <!--adding a text about my jet on the web page-->
+    <div class="hero-text">
+      <h3>Experience luxury in the skies</h3>
+      <p>Earn flight miles with every booking</p>
+    </div>
+
+    <!--setting the form-->
+  <div class="booking-form">
+    <h2>Book Your Flight</h2>
+    <form action="#">
+      <div class="form-group">
+        <label for="from">From:</label>
+        <input type="text" id="from" name="from" placeholder="Enter Departure City">
+      </div>
+      <div class="form-group">
+        <label for="to">To:</label>
+        <input type="text" id="to" name="to" placeholder="Enter Arrival City">
+      </div>
+      <div class="form-group">
+        <label for="departure">Departure Date:</label>
+        <input type="date" id="departure" name="departure">
+      </div>
+      <div class="form-group">
+        <label for="passengers">Number of Passengers:</label>
+        <select id="passengers" name="passengers">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+      <button type="submit" class="button">Find Flights</button>
+    </form>
+  </div>
+
+  <!--setting the footer-->
+  <div id="footer-div">
+
+    <!--adding the items within the footer nav bar-->
+    <div class="footer-nav">
+      <ul>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Cookie Settings</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Accredation</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+</body>
+
+</html>
